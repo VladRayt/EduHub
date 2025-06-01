@@ -1,0 +1,83 @@
+import React, { useState } from 'react';
+import { StyleSheet, Text, View } from 'react-native';
+
+import { IconButton } from '@components/IconButton';
+import { If } from '@components/If';
+import { AnimatedInput } from '@components/Input';
+import { t } from '@config/i18next';
+import { Colors } from '@styles/colors';
+import { typographyStyles } from '@styles/typography';
+
+type Props = {
+  title: string;
+  onSave: (value: string) => void | Promise<void>;
+};
+
+export const TitleEdit = ({ title, onSave }: Props) => {
+  const [newTitle, setNewTitle] = useState<string>(title);
+  const [isEdit, setIsEdit] = useState<boolean>(false);
+
+  const handleIconPress = () => {
+    if (!isEdit) setIsEdit(true);
+    if (isEdit) {
+      setIsEdit(false);
+      onSave(newTitle);
+    }
+  };
+  return (
+    <View style={styles.container}>
+      <View style={styles.previewContainer}>
+        <Text style={[typographyStyles.large, styles.textColor, { flex: 1 }]}>
+          {t('profile.organization-details.title')}
+        </Text>
+        <IconButton
+          iconColor={Colors.DARK_GRAY}
+          iconName={isEdit ? 'save' : 'edit'}
+          iconLib='Feather'
+          onPress={handleIconPress}
+        />
+        <If value={isEdit}>
+          <IconButton
+            iconColor={Colors.DARK_GRAY}
+            iconName={'x'}
+            iconLib='Feather'
+            onPress={() => setIsEdit(false)}
+          />
+        </If>
+      </View>
+      <If value={!isEdit}>
+        <Text style={[typographyStyles.xl, styles.textColor]}>{newTitle}</Text>
+      </If>
+      <If value={isEdit}>
+        <View style={styles.inputContainer}>
+          <AnimatedInput
+            placeholder={t('profile.organization-details.title-placeholder')}
+            onChangeText={setNewTitle}
+            value={newTitle}
+          />
+        </View>
+      </If>
+    </View>
+  );
+};
+
+const styles = StyleSheet.create({
+  container: {
+    flexDirection: 'column',
+    width: '100%',
+    alignItems: 'flex-start',
+    justifyContent: 'space-between',
+    columnGap: 12,
+  },
+  previewContainer: {
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    flexDirection: 'row',
+    columnGap: 12,
+    width: '100%',
+  },
+  inputContainer: { flex: 1, width: '100%', marginTop: 12 },
+  textColor: {
+    color: Colors.DARK_GRAY,
+  },
+});

@@ -1,0 +1,228 @@
+{
+  "auth": {
+    "auth-text": "Illuminate Your Curiosity Journey",
+    "sign-in": {
+      "button-text": "Sign In",
+      "email-placeholder": "Email",
+      "password-placeholder": "Password",
+      "forgot-password": "Forgot Password?",
+      "sign-up": "Sign Up"
+    },
+    "sign-up": {
+      "button-one": "Next",
+      "button-two": "Submit",
+      "last-name": "Last Name",
+      "first-name": "First Name",
+      "email-placeholder": "Email",
+      "password-placeholder": "Password",
+      "sign-in": "Sign In"
+    },
+    "user-code": {
+      "button-text": "Sign In",
+      "code-placeholder": "Verification Code",
+      "sign-in": "Sign In",
+      "description": "Verification code will be sended to your email."
+    },
+    "change-password": {
+      "button-text": "Reset Password",
+      "new-password": "New Password",
+      "confirm-password": "Confirm Your Password",
+      "not-same": "Passwords must be the same"
+    }
+  },
+  "progress": {
+    "correct": "Correct",
+    "incorrect": "Incorrect",
+    "home": {
+      "header": "Your analytics",
+      "average-user": "Your average accuracy:",
+      "created-tests": "Created tests average accuracy:",
+      "average-organizations": "Organizations average accuracy:"
+    },
+    "organization": {
+      "header": "Organization analytics",
+      "button": "Go to organization",
+      "details": "Organization details:"
+    },
+    "test": {
+      "header": "Test analytics",
+      "button": "Go to test",
+      "details": "Test details:"
+    },
+    "user": {
+      "header": "User analytics",
+      "user-details": "average accuracy:",
+      "completed-details": "Completed tests average accuracy:"
+    }
+  },
+  "profile": {
+    "list": {
+      "header": "Settings",
+      "notifications": "Notifications",
+      "organizations-list": "Organizations",
+      "organization": "Organization",
+      "tests-list": "Tests",
+      "profile": "Profile",
+      "about": "About",
+      "search": "Search for a setting..."
+    },
+    "profile": {
+      "header": "Profile",
+      "username": "User Name:",
+      "name": "Enter New Name",
+      "reset-password": "Reset Password:",
+      "password": "New Password:",
+      "code": "Enter Code",
+      "send-code": "Send Code",
+      "update": "Update Password",
+      "change-language": "Change Language:",
+      "sign-out": "Sign Out"
+    },
+    "about": {
+      "header": "About",
+      "title": "About",
+      "welcome": "Welcome to our app! Our app is a platform where users can discover and participate in tests provided by various organizations. Whether you`re looking to enhance your skills or gain valuable insights, our app offers a wide range of tests to suit your needs.",
+      "mission": "Our mission is to make learning and development accessible to everyone. We believe that continuous learning is key to personal and professional growth, and our platform is designed to empower users on their learning journey.",
+      "thanks": "Thank you for choosing our app. We`re dedicated to providing you with a seamless and rewarding experience. If you have any feedback or suggestions, feel free to reach out to us. Happy testing!"
+    },
+    "tests-list": {
+      "header": "All tests",
+      "completed": "Completed tests",
+      "created": "Created tests"
+    },
+    "test-details": {
+      "header": "Test setting",
+      "title": "Test Title:",
+      "title-placeholder": "Enter new test name",
+      "description": "Test Description:",
+      "description-placeholder": "Enter new description",
+      "theme": "Test Theme:",
+      "theme-placeholder": "Enter new theme",
+      "question-title": "Questions:",
+      "remove-button": "Remove"
+    },
+    "organization-details": {
+      "header": "Organization settings",
+      "title": "Organization Title:",
+      "title-placeholder": "Enter new title",
+      "description": "Description:",
+      "description-placeholder": "Enter new description",
+      "color": "Primary Color:",
+      "members": "Members:",
+      "me": " (you)",
+      "admin": "Admin",
+      "user": "User"
+    }
+  },
+  "main": {
+    "organizations-list": {
+      "admin": "Editable organizations",
+      "user": "Readable organizations",
+      "pending": "Pending organizations",
+      "header": "All organizations"
+    },
+    "create-organization": {
+      "details": "Create your own organization.",
+      "title": "Title",
+      "description": "Description",
+      "color": "Select Primary Color:",
+      "button-next": "Next",
+      "header": "Create organization",
+      "members": "Share tests for your friends.",
+      "email": "Enter Email",
+      "button-add": "Add Email",
+      "empty": "Seems like you will be alone...",
+      "button-create": "Create"
+    },
+    "create-test": {
+      "header": "Create test",
+      "title": "Let your ideas soar! The AI is ready.",
+      "description": "We are utilizing GPT models to provide our users with the best results. Let your creativity flourish with our AI-powered platform!",
+      "title-pl": "Title",
+      "theme-pl": "Theme",
+      "description-pl": "Description",
+      "questions-pl": "Count of questions",
+      "button": "Generate one"
+    },
+    "organization-details": {
+      "alert-title": "Access denied.",
+      "alert-description": "You are not allowed to create tests.",
+      "default-username": "Guest",
+      "members": "member(s)",
+      "tests": "test(s)",
+      "completed": "Complet",
+      "uncompleted": "Uncomplet",
+      "admin": "Organization tests",
+      "search": "What test do you want to find?",
+      "empty": "Seems like there are no tests..."
+    },
+    "home": {
+      "see-all": "See all",
+      "admin": "Your organizations",
+      "user": "User organizations",
+      "empty": "Seems like you has not connected to any organization yet!",
+      "button": "Create organization",
+      "search": "What course you want to check?",
+      "welcome": "Welcome,",
+      "default-username": "Guest"
+    },
+    "test": {
+      "theme": "Theme",
+      "questions": "Number of Questions",
+      "button-start": "Start Test",
+      "analytics": "Analytics",
+      "correct": "Correct Answers",
+      "percentage": "Percentage of Correct Answers",
+      "button-results": "See results"
+    },
+    "completing": {
+      "alert-title": "Return",
+      "alert-description": "Are you sure you want to go back? All your results won't be saved!",
+      "cancel": "Cancel",
+      "accept": "Return",
+      "question": "Question ",
+      "button-back": "Previous",
+      "button-next": "Next",
+      "button-finish": "Finish",
+      "count": "of"
+    }
+  },
+  "sorting": {
+    "title": "Select sorting",
+    "A_Z": "Sort by title, Ascending",
+    "Z_A": "Sort by title, Descending",
+    "ZERO_NINE": "Sort by count, Ascending",
+    "NINE_ZERO": "Sort by count, Descending",
+    "default": "Other sorting"
+  },
+  "filter": {
+    "title": "Select filter",
+    "PENDING": "Pending",
+    "DECLINED": "Declined",
+    "WRITE": "Editable",
+    "READ": "Readable",
+    "completed": "Completed",
+    "uncompleted": "Uncompleted",
+    "default": "Other filtering"
+  },
+  "question-modal": {
+    "title": "Create Question",
+    "title-placeholder": "Question Title",
+    "description": "Enter answers and select correct one.",
+    "answer-title": "Answer title",
+    "accept": "Create",
+    "cancel": "Cancel"
+  },
+  "invite-modal": {
+    "title": "Invite User",
+    "placeholder": "Enter Email",
+    "accept": "Invite",
+    "error": "Email is not valid",
+    "cancel": "Cancel"
+  },
+  "delete-modal": {
+    "title": "Are you sure you want to delete?",
+    "accept": "Delete",
+    "cancel": "Cancel"
+  }
+}

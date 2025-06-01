@@ -1,0 +1,305 @@
+{
+  "auth": {
+    "auth-text": "Illuminate Your Curiosity Journey",
+    "auth-description": "This app has saved me countless hours of work and helped me deliver high quality tests for my students.",
+    "auth-author": "Sofia Davis",
+    "sign-in": {
+      "title": "Sign in to your account",
+      "description": "Enter your email and password",
+      "email-placeholder": "Email",
+      "password-pl": "Your Password",
+      "button": "Sign In",
+      "sub": "OR CREATE NEW ACCOUNT",
+      "sign-up": "Sign Up",
+      "forgot-password": "Forgot Password?"
+    },
+    "sign-up": {
+      "button-one": "Continue",
+      "button-two": "Sign Up",
+      "title": "Create your account",
+      "description": "Enter credentials to create an account",
+      "name-pl": "Your Name",
+      "password-pl": "Enter your password",
+      "confirm-pl": "Retype your password",
+      "sub": "OR SIGN IN WITH EXISTING ACCOUNT",
+      "sign-in": "Sign In"
+    },
+    "verification-code": {
+      "title": "Continue with code",
+      "description": "Enter code that was sent to your email.",
+      "code-pl": "Your verification code",
+      "button": "Continue"
+    },
+    "forgot-password": {
+      "title": "Forgot Password",
+      "description": "Enter your email",
+      "button": "Continue"
+    },
+    "restore-password": {
+      "title": "Restore Password",
+      "description": "Enter your new password",
+      "password-pl": "Enter your password",
+      "confirm-pl": "Retype your password"
+    }
+  },
+  "top-bar": {
+    "organizations": "My organizations",
+    "progress": "My progress",
+    "settings": "My settings"
+  },
+  "progress": {
+    "correct": "Correct",
+    "incorrect": "Incorrect",
+    "home": {
+      "average-user": "Your average accuracy",
+      "average-tests": "Your accuracy on all completed tests",
+      "average-organizations": "Average accuracy on your organizations"
+    },
+    "organization": {
+      "average-organization": "Accuracy accuracy for current organization",
+      "average-organizations": "Accuracy for created organization"
+    },
+    "test": {
+      "average-test": "Accuracy for current test across users",
+      "average-tests": "Average accuracy on your created tests"
+    },
+    "user": {
+      "header": "User analytics",
+      "user-details": "average accuracy:",
+      "completed-details": "Completed tests average accuracy:"
+    }
+  },
+  "profile": {
+    "list": {
+      "organizations-list": "Organizations",
+      "tests-list": "Tests",
+      "profile": "Profile",
+      "about": "About & Appearance"
+    },
+    "profile": {
+      "title": "Profile",
+      "description": "This is how others will see you on the site.",
+      "profile": "Profile Details",
+      "name": "Username",
+      "name-pl": "Your name",
+      "name-description": "This is your public display name. It can be your real name or a pseudonym.",
+      "button-username": "Update Username",
+      "password": "Password",
+      "password-pl": "Your new password",
+      "password-description": "Update your password.",
+      "code": "Verification Code",
+      "code-pl": "Code",
+      "code-description": "Enter code that was sent to your email.",
+      "button-password": "Update Password",
+      "button-sign-out": "Sign Out"
+    },
+    "about": {
+      "title": "About & Appearance",
+      "description": "A small description about our app.",
+      "subtitle": "About app",
+      "welcome": "Welcome to our app!",
+      "app-explore": "Our app is a platform where users can discover and participate in tests provided by various organizations. Whether you`re looking to enhance your skills or gain valuable insights, our app offers a wide range of tests to suit your needs.",
+      "app-mission": "Our mission is to make learning and development accessible to everyone. We believe that continuous learning is key to personal and professional growth, and our platform is designed to empower users on their learning journey.",
+      "app-thanks": "Thank you for choosing our app. We`re dedicated to providing you with a seamless and rewarding experience. If you have any feedback or suggestions, feel free to reach out to us. Happy testing!",
+      "feature": "Features",
+      "feature-1": "Explore tests from a variety of organizations.",
+      "feature-2": "Participate in tests to assess your skills and knowledge.",
+      "feature-3": "Track your progress and see how you improve over time.",
+      "feature-4": "Receive personalized recommendations based on your performance.",
+      "feature-5": "Connect with like-minded learners and share insights.",
+      "appearance": "Appearance",
+      "dark-theme": "Dark theme",
+      "light-theme": "Light theme",
+      "system-theme": "System theme",
+      "language": "Language",
+      "language-pl": "Choose the language"
+    },
+    "tests-list": {
+      "title": "Test",
+      "description": "Select test to start edit it.",
+      "subtitle": "Tests List",
+      "filters": "Filters",
+      "search-pl": "Search filter",
+      "filter-pl": "Set filter",
+      "sorting-pl": "Set sorting",
+      "filters-description": "Select a filter to find test that you need.",
+      "completed": "Completed tests",
+      "created": "Created tests",
+      "empty": "No items found."
+    },
+    "test-details": {
+      "title": "Test",
+      "description": "This is how others will see your test on the site.",
+      "subtitle": "Test Details",
+      "button-delete": "Delete test",
+      "name": "Title",
+      "name-pl": "Test title",
+      "name-description": "You can change title of your test.",
+      "test-description": "Description",
+      "test-description-pl": "Test description",
+      "test-description-description": "Tell more about your test.",
+      "theme": "Theme",
+      "theme-pl": "Test theme",
+      "theme-description": "You can change theme of your test.",
+      "button-update": "Update test",
+      "questions": "Test questions",
+      "questions-description": "You can create or remove any question for this test."
+    },
+    "organizations-list": {
+      "title": "Organization",
+      "description": "Select organization to start edit it.",
+      "subtitle": "Organizations List",
+      "button-create": "Create organization",
+      "filters": "Filters",
+      "search-pl": "Search filter",
+      "filter-pl": "Set filter",
+      "sorting-pl": "Set sorting",
+      "filters-description": "Select a filter to find organization that you need.",
+      "admin": "Editable organizations",
+      "user": "Readable organizations",
+      "pending": "Unapproved organizations",
+      "empty": "No items found."
+    },
+    "organization-details": {
+      "title": "Organization",
+      "description": "This is how others will see your organization on the site.",
+      "subtitle": "Organization Details",
+      "button-delete": "Delete organization",
+      "name": "Title",
+      "name-pl": "Organization title",
+      "name-description": "You can change title of your organization.",
+      "org-description": "Description",
+      "org-description-pl": "Organization description",
+      "org-description-description": "Tell more about your organization.",
+      "color": "Primary color",
+      "color-description": "Please select color that will represent you organization.",
+      "button-update": "Update organization",
+      "me": "you",
+      "members": "Organization members",
+      "members-description": "Give your friend and students chance to complete AI generated tests."
+    }
+  },
+  "main": {
+    "side-bar": {
+      "search": "Search filter",
+      "search-pl": "Search filter",
+      "filter": "Permission filter",
+      "filter-pl": "Set filter",
+      "sorting": "Sorting",
+      "sorting-pl": "Set sorting",
+      "button-create": "Create new organization"
+    },
+    "organization-details": {
+      "button-create": "Create new test",
+      "author": "Author",
+      "left": "{count} left",
+      "completed-count": "You have completed {completed} from {all}",
+      "completed": "Completed",
+      "uncompleted": "Uncompleted",
+      "uncompleted-title": "Uncompleted tests",
+      "uncompleted-description": "List of tests that you can complete at any time.",
+      "completed-title": "Completed tests",
+      "completed-description": "List of tests that you already complete.",
+      "search": "Enter test title.",
+      "empty": "No items found.",
+      "test": "Test",
+      "details": "Test Details",
+      "theme": "Theme",
+      "questions": "Questions count",
+      "users": "Users that complete",
+      "description": "Shipping Information",
+      "button-review": "Review",
+      "button-start": "Start",
+      "tests": "test(s)",
+      "members": "member(s)"
+    },
+    "home": {
+      "admin": "Editable organizations",
+      "user": "Readable organizations",
+      "pending": "Unapproved organizations",
+      "empty": "No items found."
+    },
+    "test": {
+      "test": "Test",
+      "theme": "Theme",
+      "question": "Question",
+      "questions": "Number of Questions",
+      "button-next": "Continue",
+      "button-return": "Go back to organization",
+      "button-results": "See results",
+      "button-back": "Go back",
+      "button-finish": "Finish"
+    }
+  },
+  "sorting": {
+    "title": "Select sorting",
+    "A_Z": "Sort by title, Ascending",
+    "Z_A": "Sort by title, Descending",
+    "ZERO_NINE": "Sort by count, Ascending",
+    "NINE_ZERO": "Sort by count, Descending",
+    "default": "Other sorting"
+  },
+  "filter": {
+    "title": "Select filter",
+    "PENDING": "Pending",
+    "ACCEPTED": "Accepted",
+    "WRITE": "Editable",
+    "READ": "Readable",
+    "completed": "Completed",
+    "uncompleted": "Uncompleted",
+    "default": "Other filtering"
+  },
+  "question-modal": {
+    "title": "Add question",
+    "description": "We are utilizing GPT models to provide our users with the best results. Let your creativity flourish with our AI-powered platform!",
+    "name": "Title",
+    "name-pl": "Enter answer",
+    "answer-title": "Enter answer",
+    "correct-answer": "Correct answer",
+    "question": "Question",
+    "accept": "Create",
+    "cancel": "Cancel"
+  },
+  "invite-modal": {
+    "title": "Invite member",
+    "description": "Please enter email for user that you want to invite.",
+    "user": "Read-only",
+    "admin": "Read and write",
+    "permission-pl": "Set Permission",
+    "accept": "Continue",
+    "cancel": "Cancel"
+  },
+  "delete-modal": {
+    "title": "Are you absolutely sure?",
+    "description": "This action cannot be undone. This will permanently delete this one!",
+    "accept": "Delete",
+    "cancel": "Cancel"
+  },
+  "organization-modal": {
+    "title": "Create organization",
+    "description": "We are utilizing GPT models to provide our users with the best results. Let your creativity flourish with our AI-powered platform!",
+    "name": "Title",
+    "name-pl": "Enter organization title",
+    "org-description": "Description",
+    "org-description-pl": "Enter organization description",
+    "color": "Primary color",
+    "accept": "Create",
+    "cancel": "Cancel"
+  },
+  "test-modal": {
+    "title": "Create organization",
+    "description": "We are utilizing GPT models to provide our users with the best results. Let your creativity flourish with our AI-powered platform!",
+    "name": "Title",
+    "name-pl": "Enter test title",
+    "theme": "Theme",
+    "theme-pl": "Enter test theme",
+    "test-description": "Description",
+    "test-description-pl": "Enter test description",
+    "info": "Additional information",
+    "info-pl": "Enter additional information",
+    "questions": "Count of questions",
+    "questions-pl": "Enter count of questions",
+    "accept": "Create",
+    "cancel": "Cancel"
+  }
+}

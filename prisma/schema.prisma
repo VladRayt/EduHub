@@ -1,0 +1,128 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider     = "postgresql"
+  url          = env("DATABASE_URL")
+  relationMode = "prisma"
+}
+
+enum Permission {
+  READ
+  WRITE
+}
+
+enum Approvement {
+  DECLINED
+  PENDING
+  ACCEPTED
+}
+
+model User {
+  id            String             @id @default(uuid())
+  email         String             @unique
+  auth          UserAuth?
+  name          String
+  organizations OrganizationUser[]
+}
+
+model UserAuth {
+  id              Int     @id @default(autoincrement())
+  userId          String  @unique
+  password        String
+  token           String
+  oneTimePassword Boolean
+  restorationCode String?
+  user            User    @relation(fields: [userId], references: [id], onDelete: Cascade)
+}
+
+model Organization {
+  id          String             @id @default(uuid())
+  title       String             @unique
+  authorId    String
+  authorName  String
+  color       String
+  description String?
+  members     OrganizationUser[]
+}
+
+model OrganizationUser {
+  userId         String
+  organizationId String
+  permission     Permission
+  approvement    Approvement
+  user           User            @relation(fields: [userId], references: [id], onDelete: Cascade)
+  organization   Organization    @relation(fields: [organizationId], references: [id], onDelete: Cascade)
+  completedTests CompletedTest[]
+  createdTests   Test[]
+
+  @@id([userId, organizationId])
+  @@index([organizationId])
+}
+
+model Test {
+  id                Int              @id @default(autoincrement())
+  userId            String // Assuming userId refers to the user who created the test
+  organizationId    String // Assuming organizationId refers to the organization to which the test belongs
+  title             String
+  theme             String
+  description       String
+  questions         Question[]
+  organizationUser  OrganizationUser @relation(fields: [userId, organizationId], references: [userId, organizationId], onDelete: Cascade)
+  usersThatComplete CompletedTest[]
+
+  @@index([userId, organizationId])
+}
+
+model Question {
+  id          Int         @id @default(autoincrement())
+  testId      Int
+  title       String
+  answers     Answer[]
+  test        Test        @relation(fields: [testId], references: [id], onDelete: Cascade)
+  userAnswers UserAnswer[]
+
+  @@index([testId])
+}
+
+model Answer {
+  id         Int         @id @default(autoincrement())
+  questionId Int
+  title      String
+  isCorrect  Boolean
+  question   Question    @relation(fields: [questionId], references: [id], onDelete: Cascade)
+  userAnswer UserAnswer[]
+
+  @@unique([id])
+  @@index([questionId])
+}
+
+model CompletedTest {
+  userId           String
+  testId           Int
+  organizationId   String
+  test             Test              @relation(fields: [testId], references: [id], onDelete: Cascade)
+  organizationUser OrganizationUser? @relation(fields: [userId, organizationId], references: [userId, organizationId], onDelete: Cascade)
+  userAnswers      UserAnswer[]
+
+  @@id([userId, testId])
+  @@index([testId])
+  @@index([userId, organizationId])
+}
+
+model UserAnswer {
+  id             Int           @id @default(autoincrement())
+  userId         String
+  questionId     Int           
+  answerId       Int           
+  testId         Int
+  isCorrect      Boolean
+  completedTest  CompletedTest @relation(fields: [userId, testId], references: [userId, testId], onDelete: Cascade)
+  question       Question      @relation(fields: [questionId], references: [id], onDelete: Cascade)
+  selectedAnswer Answer        @relation(fields: [answerId], references: [id], onDelete: Cascade)
+
+  @@index([questionId])
+  @@index([userId, testId])
+  @@index([answerId])
+}

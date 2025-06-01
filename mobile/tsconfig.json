@@ -1,0 +1,57 @@
+{
+  "extends": "@react-native/typescript-config/tsconfig.json",
+  "compilerOptions": {
+    "lib": [
+      "ESNext.Array"
+    ],
+    "strict": true,
+    "strictNullChecks": true,
+    "baseUrl": ".",
+    "paths": {
+      "@page/*": [
+        "./src/pages/*"
+      ],
+      "@zustand/*": [
+        "src/zustand/*"
+      ],
+      "@routes/*": [
+        "./src/routes/*"
+      ],
+      "@components/*": [
+        "./src/components/*"
+      ],
+      "@requests/*": [
+        "./src/requests/*"
+      ],
+      "@mobile-types/*": [
+        "src/mobile-types/*"
+      ],
+      "@utils/*": [
+        "./src/utils/*"
+      ],
+      "@styles/*": [
+        "./src/styles/*"
+      ],
+      "@assets/*": [
+        "./src/assets/*"
+      ],
+      "@hooks/*": [
+        "./src/hooks/*"
+      ],
+      "@blocks/*": [
+        "./src/blocks/*"
+      ],
+      "@locales/*": [
+        "./src/locales/*"
+      ],
+      "@config/*": [
+        "./src/config/*"
+      ]
+    }
+  },
+  "references": [
+    {
+      "path": "../server"
+    }
+  ]
+}
