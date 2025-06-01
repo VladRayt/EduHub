@@ -1,4 +1,1 @@
-BASE_URL=http://localhost:5000
-RESEND_API_KEY=re_FamqFisV_JWtwqDWsiU5ezXAK9daMzC4P
-DATABASE_URL="postgresql://admin:1111@localhost:5432/diplom_db"
-JWT_SECRET=c1d91a7ee0b9755fc7231dfba5de0a0eb7d86bfd7808614c44392e5c6aa11a774ebefa8bc96d890d58d528d74e4ebf35b84f6888a74d1e28e7152c9c48e7bed3
+
